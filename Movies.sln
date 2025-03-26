@@ -1,18 +1,22 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Movies.Presentation", "Movies.Presentation\Movies.Presentation.csproj", "{C7D835B7-D264-45FE-93EA-77C62F61F034}"
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35027.167
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Movies.Presentation", "Movies.Presentation\Movies.Presentation.csproj", "{C7D835B7-D264-45FE-93EA-77C62F61F034}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Movies.Application", "Movies.Application\Movies.Application.csproj", "{7FD5900F-6FE7-4FDB-9242-7E787EEEFDAB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Movies.Application", "Movies.Application\Movies.Application.csproj", "{7FD5900F-6FE7-4FDB-9242-7E787EEEFDAB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Movies.Infrastructure", "Movies.Infrastructure\Movies.Infrastructure.csproj", "{25C45A1E-8669-4F6E-A3EB-3AB504B2F1FC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Movies.Infrastructure", "Movies.Infrastructure\Movies.Infrastructure.csproj", "{25C45A1E-8669-4F6E-A3EB-3AB504B2F1FC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Movies.Domain", "Movies.Domain\Movies.Domain.csproj", "{92821F55-5566-4126-A99D-2D4E096B61A6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Movies.Domain", "Movies.Domain\Movies.Domain.csproj", "{92821F55-5566-4126-A99D-2D4E096B61A6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Movies.Contracts", "Movies.Contracts\Movies.Contracts.csproj", "{BE45E388-2ED2-4147-8A6F-49A8CC7453F1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Movies.Contracts", "Movies.Contracts\Movies.Contracts.csproj", "{BE45E388-2ED2-4147-8A6F-49A8CC7453F1}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{CD204169-59DB-47D0-99BA-F28E22C387F3}"
 	ProjectSection(SolutionItems) = preProject
 		docker-compose.yml = docker-compose.yml
+		README.md = README.md
 	EndProjectSection
 EndProject
 Global
@@ -41,5 +45,11 @@ Global
 		{BE45E388-2ED2-4147-8A6F-49A8CC7453F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BE45E388-2ED2-4147-8A6F-49A8CC7453F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BE45E388-2ED2-4147-8A6F-49A8CC7453F1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {23345722-F7A9-4588-BC7B-5B209D30569A}
 	EndGlobalSection
 EndGlobal
