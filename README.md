@@ -5,11 +5,19 @@ https://www.youtube.com/watch?v=XTqwvQAv9Lg&t=40s
 ## Overview
 The functionality of this application is limited to a single entity - Movie. However, what this sample app is focused on is highlighting the deployment capabilities of Docker
 and docker compose. The full solution when running provions 3 docker containers:
-- 1. the front end Blazor App browser client
-- 2. the back end C# web api endpoints  
-- 3. an instance of MS Sql Server
+ 1. The front end React App browser client
+ 2. The back end C# web api endpoints  
+ 3. An instance of MS Sql Server
 
-In Docker desktop you can see this represented - docker compose groups the 3 containes together and enables communication between them.
+The docker runtime and commands handle building and then hosting the container instances and wiring up the communication between them with a bridging network.
+
+![Alt text](Images/dockerContainers.jpg)
+
+
+The React App and Web Api each have there own Docker file that the docker-compose file references to build the apps, package images and thne run them each of them in their
+own container. The Sql Server instance uses an image from the Github repo.
+
+When the full application is running you can each of the containers in Docker desktop - docker compose groups the 3 containes together and enables communication between them.
 
 ![Alt text](Images/dockerdesktop.jpg)
 
@@ -28,47 +36,3 @@ This solution demonstrates the use of docker compose to bring up 3 containers re
 To run the full solution use a command prompt and navigate to the root folder of the solution - the one that containes the docker-compose.yml file.
 
 
-
-### Clean Architecture (popularized by Robert C. Martin) emphasizes:
-
-![Alt text](Images/DockerContainers2.jpg)
-
-### Separation of concerns
-
-Independence from frameworks, UI, and databases
-
-Testability
-
-Business rules as the core
-
-### Key Layers in Clean Architecture:
-
-Domain Layer (Core business logic)
-
-Application Layer (Use cases/application logic)
-
-Infrastructure Layer (External concerns: DB, APIs, etc.)
-
-Presentation Layer (UI/API)
-
-Uses:
-Mediator
-
-CQRS 
-
-Domain
-
-Infrastucture
-
-
-Testing
-
-React App
-
-Web API
-
-Sql Server
-
-Docker
-
-Docker Compose
