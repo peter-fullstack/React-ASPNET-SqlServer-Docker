@@ -34,8 +34,8 @@
         
     healthcheck:
       test: /opt/mssql-tools/bin/sqlcmd -S localhost -U SA -P "SuperPassword123" -Q "SELECT 1" -b -o /dev/null
-      interval: 10s
-      timeout: 3s
+      interval: 20s
+      timeout: 5s
       retries: 10
       start_period: 10s
       
