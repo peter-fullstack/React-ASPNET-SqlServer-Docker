@@ -11,7 +11,7 @@ and docker compose. The full solution when running provions 3 docker containers:
 
 The docker runtime and commands handle building and then hosting the container instances and wiring up the communication between them with a bridging network.
 
-<img src="images/dockerContainers.jpg" alt="App Screenshot" width="500" style='padding:10px'>
+<img src="/images/dockerContainers.jpg" alt="App Screenshot" width="500" style='padding:10px'>
 
 The React App and Web Api each have there own Docker file that the docker-compose file references to build the apps, package images and thne run them each of them in their
 own container. The Sql Server instance uses an image from the Github repo.
