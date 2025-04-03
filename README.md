@@ -17,6 +17,8 @@ Sql Servere - an instance of the database server is made available in a docker c
 
 ### Clean Architecture (popularized by Robert C. Martin) emphasizes:
 
+![Alt text](Images/DockerContainers2.jpg)
+
 ### Separation of concerns
 
 Independence from frameworks, UI, and databases
